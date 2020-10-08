@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+  overflow-x: hidden;
+ 
+}
+/*welcome section*/
+.welcome-section{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  
+  background-image: linear-gradient(45deg,#FBD3E9,#BB377D);
+  border-radius: 30px;
+}
+.welcome-section > div > div >h4 {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: monospace;
+}
+.welcome-section > p{
+  color : white;
+  text-align: center;
+  font-weight:200;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#profile:hover {
+  opacity: 0.7;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#about_me{
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 4rem;
+  font-family: monospace;
+}
+
+@media(max-width: 600px){
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+}
+#about_me{
+  margin-top: 10px;
+  text-align: center;
+  width: 90%;
+  font-size: 2rem;
+  margin-left: 0px;
+
+}
+}
+/*end welcomesection*/
+
+a{
+  text-decoration: none;
+  color: white;
+}
+/*nav*/
+.nav_bar{
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height:15%;
+ 
+  background:linear-gradient(30deg,rgb(237,201,136),rgba(229, 172, 180, 0.2)),url("img1.jpg");
+  background-size: 100%;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+.nav_list{
+  display: flex;
+  margin-right: 2rem;
+ list-style : none;
+}
+.nav_list li a {
+  display: block;
+  font-size: 3rem;
+  padding: 2rem;
+}
+.nav_list li a:hover {
+  transition: 0.2s;
+  background: #c56183;
+  height: 60%;
+}
+
+@media(max-width: 600px){
+  .nav_bar{
+    height: 10%;
+  }
+  .nav_list li a {
+    text-align: center;
+    padding:1rem;
+    font-size: 1.9rem;
+  }
+  .nav_list li a:hover {
+    transition: 0.2s;
+  background: #c56183;
+  height: 60%;
+
+}
+}
+/*nav-end*/
+
+/*work section*/
+#work_section{
+ border-radius: 30px;
+text-align: center;
+  padding: 5rem 5rem;
+  background:linear-gradient(45deg,rgb(54,54,54),rgba(0,173,181));
+height: 80rem;
+justify-content: center;
+align-content: center;
+}
+
+.work_header{
+
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  max-width: 640px;
+  margin : auto;
+  font-size: 4rem;
+  border-bottom: 0.2rem solid white;
+  color: white;
+}
+
+/* END OF WORK SECTION*/
+
+/* skills section */
+.skills1{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  max-width: 640px;
+  padding-top: 40px;
+  font-size: 4rem;
+  
+ 
+}
+.skills_section{ 
+ box-shadow: 10px;
+  height: 100vh;
+  background:linear-gradient(45deg,#50C9C3,#0ABFBC);
+  border-radius: 30px;
+}
+@media(max-width: 600px){
+.skills_section{
+  height: 129rem;
+  font-size:2rem;
+}
+}
+/*skills end*/
+/*SERVICES SECTION */
+#services_section{
+  border-radius: 30px;
+  height: 80rem;
+  align-items: center;
+  background:linear-gradient(45deg,#e65c00,#F9D423);
+
+}
+@media(max-width: 600px){
+#services_section{
+  height: 80rem;
+}
+
+}
+.services_list{
+   
+   
+   font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.list_2{
+
+  padding-left: 290px;
+
+}
+.services_list li{
+  padding: 20px;
+}
+.services_header{
+  font-family: 'Permanent Marker', cursive;
+  max-width: 640px; 
+  text-align: center;
+  margin: auto;
+  font-size: 4rem;
+  border-bottom: 0.2rem solid #213e3b;
+  color: #213e3b;
+}
+@media(max-width: 600px){
+  .services_list{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .list_2{
+    padding-left: 0px;
+  }
+}
+/*END OF SERVICES section*/
+/*.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;*/
+}
+.project-tile {
+  background: #303841;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+
+}
+.project_image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+/* end project section*/
+
+/*work_section_*/
+/*gallery*/
+.gallery{
+  margin: 20px 50px;
+  }
+@media(max-width: 600px){
+  .gallery{
+    margin: 10px 20px;
+  }
+}
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 80px;
+}
+@media(max-width: 600px){
+.gallery img{
+  width: 40px;
+  padding: 5px;
+}
+
+}
+#thumbn{
+  border:3px solid rgba(255,255,255,0.5);
+  border-radius: 30px;
+}
+@media(max-width: 600px){
+  #thumbn{
+    border:2px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+  }
+}
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+/* end of gallery*/
+/* end of work section*/
+.contact-section{
+ 
+  
+  background-image: linear-gradient(45deg,#16A085,#F4D03F);
+ 
+  background-repeat: no-repeat;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 20rem;
+  
+    
+}
+footer{
+
+ font-style: bold;
+  height: 100%;
+  color: white;
+  font-size: 3rem;
+  font-family: monospace;
+ text-align: center;
+  width: 100%;
+ background-color: #303841;
+
+  border-radius: 30px;
+  
+}
+@media(max-width: 600px){
+  footer{
+    height: 100%;
+    font-size: 2rem;
+  }
+}
+
+
+  .nav-bar{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+ 
+  background:linear-gradient(rgb(190,49,68),rgba(229, 172, 180, 0.2)),url("img1.jpg");
+  background-size: 100%;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+  .nav_list a {
+  display: block;
+  font-size: 3rem;
+  padding: 1rem;
+}
+ .nav_list a:hover{
+  height: 90%;
+ }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 10px;
+  width:90%;
+
+}
+@media(max-width: 600px){
+  .card{
+    margin-top: 20px;
+    width: 250px;
+  }
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 30px 10px rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 10px 20px;
+}
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*.fa-facebook {
+  background: #3B5998;
+  color: white;}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;}*/
+  .fa-phone{
+     background: #125688;
+  color: white;
+}
+
+  .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+  color: white;
+}
+
+.contact-header{
+  font-family: 'Chilanka', cursive;
+}
+

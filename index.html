@@ -1,0 +1,462 @@
+
+<!-- navbar -->
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main_stylesheet.css">
+	<title>Bussiness card</title>
+</head>
+
+
+<nav id="navbar" class="nav_bar">
+ 
+  <ul class="nav_list">
+    <li>
+      <a href="#welcome-section">About
+      </a>
+    </li>
+    <li>
+      <a href="#skills">Skills
+      </a>
+    </li>
+    <li>
+      <a href="#services_section">Services
+      </a>
+    </li>
+    <li>
+      <a href="#work_section">Work
+      </a>
+    </li>
+    <li>
+      <a href="#Contact">Contact
+      </a>
+    </li>
+  </ul>
+
+</nav>
+<!-- END navbar -->
+<!-- welcome section -->
+<section id="welcome-section" class="welcome-section">
+	 <div class="container">
+    <div class="card">
+  
+  <style>
+    
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<img id="myImg" src="images/DSCN8521.jpg" alt="Display Picture" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+  <h4><b>Hey I'm Neha Patil</b></h4>
+    <p>Professional Make-Up Artist</p>
+
+</div>
+
+    
+ 
+    </div>
+    
+  </div>
+
+
+<div id="about_me" style="font-family: Comic Sans MS, Comic Sans;" >"I'm a Professional Makeup artist certified by Lakme from Pune. Makeup is my passion and giving you the best form of beauty. Wedding, Fashion and Films are main area of my work."</div>
+</section>
+
+<!--end welcome section-->
+
+<!-- PROJECTS -->
+<div id="skills"></div>
+<section class="skills_section" >
+  
+  
+ <h2  style="text-align: center;
+  max-width: 640px;
+  margin : auto;
+  font-size: 4rem;
+  border-bottom: 0.2rem solid #FF4670;
+  color: #FF4670;" class="skills1">My Skills</h2>
+  
+  <style>
+ 
+.skills_graph{
+  box-sizing: border-box;
+ margin-left: 9vh;
+ display: flex;
+ flex-direction: row;
+}
+@media(max-width: 600px){
+.skills_graph{
+  margin-left: 65px;
+  display: flex;
+  flex-direction: column;
+}
+}
+.first_five{
+  margin-right: 48vh;
+}
+@media(max-width: 600px){
+  .first_five{
+    margin-right: 100px; 
+  }
+}
+
+.container_skills {
+ border-radius: 7px;
+  width: 450px;
+  background-color: white;
+  box-shadow:20px 20px 50px 15px grey;
+
+}
+
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 7px;
+
+
+}
+
+
+.skills_graph p{
+  text-align: center;
+
+
+}
+@media(max-width: 600px){
+.container_skills{
+  width: 280px;
+}
+}
+
+.time {width: 90%; height: 15px; background-color: #d789d7;}
+.hairs {width: 80%; height: 15px; background-color: #931a25;}
+.underpressure {width: 80%; height: 15px; background-color: #ff7e67;}
+.orientation {width: 80%; height: 15px; background-color: #f56a79;}
+.comm {width: 75%;height: 15px; background-color: #056674;}
+.Sanity {width: 95%;height: 15px; background-color: #94b4a4;}
+.Hygiene {width: 95%;height: 15px; background-color: #835858;}
+.Client {width: 75%;height: 15px; background-color: #f56a79;}
+.Detailed {width: 85%;height: 15px; background-color: #132743;}
+.Colours {width: 80%;height: 15px; background-color: #ff9a76;}
+</style>
+
+  <div class="skills_graph">
+
+
+
+<div class="first_five">
+
+<p>Time Management</p>
+<div class="container_skills">
+  <div class="skills time">90%</div>
+</div>
+
+
+<p>Hair Styling Skills</p>
+<div class="container_skills">
+  <div class="skills hairs">80%</div>
+</div>
+
+<p>Working Under Pressure</p>
+<div class="container_skills">
+  <div class="skills underpressure">80%</div>
+</div>
+
+<p>Detail Orientation</p>
+<div class="container_skills">
+  <div class="skills orientation">80%</div>
+</div>
+
+<p>Communication Skills</p>
+<div class="container_skills">
+  <div class="skills comm">75%</div>
+</div>
+</div>
+
+<div class="second_half" >
+
+<p>Makeup Sanity</p>
+<div class="container_skills">
+  <div class="skills Sanity">95%</div>
+</div>
+
+
+<p>Personal Hygiene</p>
+<div class="container_skills">
+  <div class="skills Hygiene">95%</div>
+</div>
+
+<p>Consulting Client</p>
+<div class="container_skills">
+  <div class="skills Client">75%</div>
+</div>
+
+<p>Attention To Detailed Make-Up</p>
+<div class="container_skills">
+  <div class="skills Detailed">85%</div>
+</div>
+
+<p>Knowledge of Colours</p>
+<div class="container_skills">
+  <div class="skills Colours">80%</div>
+</div>
+
+</div> 
+</div>
+</section>
+
+<section id="services_section">
+
+  <h2 class="services_header">My Services</h2>
+  <div class="services_list">
+  <div class="list_1">
+    <ul style="list-style: none;">
+      <img src="images/wedding-ring.png" style="width: 50px;"></img>
+      <li>
+      
+      Wedding & Pre-Wedding
+      </li>
+      <img src="images/make-up.png" style="width: 50px;"></img>
+      <li>
+      
+      Contemporary Makeup
+      </li>
+      <img src="images/fashion.png" style="width: 50px;"></img>
+      <li>
+      
+      Fashion Makeup
+      </li>
+        <img src="images/pencil.png" style="width: 50px;"></img>
+      <li>
+    
+      Retro Makeup
+      </li>
+      </ul>
+  </div>
+     <div class="list_2">
+    <ul style="list-style: none;">
+      <img src="images/party-mask.png" style="width: 80px;"></img>
+      <li>
+      
+      Party Makeup
+      </li>
+       <img src="images/groom.png" style="width: 50px;"></img>
+      <li>
+     
+      Groom Makeup
+      </li>
+       <img src="images/camera-film.png" style="width: 50px;"></img>
+      <li>
+     
+      Feature Film Makeup
+      </li>
+        <img src="images/movie.png" style="width: 50px;"></img>
+      <li>
+    
+      Short Film Makeup
+      </li>
+      </ul>
+  </div>
+</div>
+</section>
+
+
+<section id="work_section" class="work">
+  <h2 class="work_header">
+    Here are some of my photos
+  </h2>
+  <div class="gallery">
+    <a href="images/gal1.jpg" data-lightbox="gallery" data-title="Sample-1"><img src="images/gal1-small.jpg" id="thumbn"></a>
+    <a href="images/gal2.jpg" data-lightbox="gallery" data-title="Sameple-2"><img src="images/gal2-small.jpg" id="thumbn"></a>
+    <a href="images/gal3.jpg" data-lightbox="gallery" data-title="Sameple-3"><img src="images/gal3-small.jpg" id="thumbn"></a>
+    <a href="images/gal4.jpg" data-lightbox="gallery" data-title="Sameple-4"><img src="images/gal4-small.jpg" id="thumbn"></a>
+    <a href="images/gal5.jpg" data-lightbox="gallery" data-title="Sameple-5"><img src="images/gal5-small.jpg" id="thumbn"></a>
+    <a href="images/gal6.jpg" data-lightbox="gallery" data-title="Sameple-6"><img src="images/gal6-small.jpg" id="thumbn"></a>
+    <a href="images/gal7.jpg" data-lightbox="gallery" data-title="Sample-7"><img src="images/gal7-small.jpg" id="thumbn"></a>
+    <a href="images/gal8.jpg" data-lightbox="gallery" data-title="Sample-8"><img src="images/gal8-small.jpg" id="thumbn"></a>
+    <a href="images/gal9.jpg" data-lightbox="gallery" data-title="Sample-9"><img src="images/gal9-small.jpg" id="thumbn"></a>
+    <a href="images/gal10.jpg" data-lightbox="gallery" data-title="Sample-10"><img src="images/gal10-small.jpg" id="thumbn"></a>
+    <a href="images/gal11.jpg" data-lightbox="gallery" data-title="Sample-11"><img src="images/gal11-small.jpg" id="thumbn"></a>
+    <a href="images/gal12.jpg" data-lightbox="gallery" data-title="Sample-12"><img src="images/gal12-small.jpg" id="thumbn"></a>
+    <a href="images/gal13.jpg" data-lightbox="gallery" data-title="Sample-13"><img src="images/gal13-small.jpg" id="thumbn"></a>
+    <a href="images/gal14.jpg" data-lightbox="gallery" data-title="Sample-14"><img src="images/gal14-small.jpg" id="thumbn"></a>
+    <a href="images/gal15.jpg" data-lightbox="gallery" data-title="Sample-15"><img src="images/gal15-small.jpg" id="thumbn"></a>
+    <a href="images/gal16.jpg" data-lightbox="gallery" data-title="Sample-16"><img src="images/gal16-small.jpg" id="thumbn"></a>
+    <a href="images/gal17.jpg" data-lightbox="gallery" data-title="Sample-17"><img src="images/gal17-small.jpg" id="thumbn"></a>
+    <a href="images/gal18.jpg" data-lightbox="gallery" data-title="Sample-18"><img src="images/gal18-small.jpg" id="thumbn"></a>
+    <a href="images/gal19.jpg" data-lightbox="gallery" data-title="Sample-19"><img src="images/gal19-small.jpg" id="thumbn"></a>
+    <a href="images/gal20.png" data-lightbox="gallery" data-title="Sample-20"><img src="images/gal20-small.png" id="thumbn"></a>
+    <a href="images/gal21.jpg" data-lightbox="gallery" data-title="Sample-21"><img src="images/gal21-small.jpg" id="thumbn"></a>
+    <a href="images/gal22.jpg" data-lightbox="gallery" data-title="Sample-22"><img src="images/gal22-small.jpg" id="thumbn"></a>
+    <a href="images/gal23.jpg" data-lightbox="gallery" data-title="Sample-23"><img src="images/gal23-small.jpg" id="thumbn"></a>
+    <a href="images/gal24.jpg" data-lightbox="gallery" data-title="Sample-24"><img src="images/gal24-small.jpg" id="thumbn"></a>
+    <a href="images/gal25.jpg" data-lightbox="gallery" data-title="Sample-25"><img src="images/gal25-small.jpg" id="thumbn"></a>
+    <a href="images/gal26.jpg" data-lightbox="gallery" data-title="Sample-26"><img src="images/gal26-small.jpg" id="thumbn"></a>
+    <a href="images/gal27.jpg" data-lightbox="gallery" data-title="Sample-27"><img src="images/gal27-small.jpg" id="thumbn"></a>
+    <a href="images/gal28.jpg" data-lightbox="gallery" data-title="Sample-28"><img src="images/gal28-small.jpg" id="thumbn"></a>
+    <a href="images/gal29.jpg" data-lightbox="gallery" data-title="Sample-29"><img src="images/gal29-small.jpg" id="thumbn"></a>
+    <a href="images/gal30.jpg" data-lightbox="gallery" data-title="Sample-30"><img src="images/gal30-small.jpg" id="thumbn"></a>
+    
+
+  </div>
+ 
+ 
+
+
+
+</section>
+<!-- END PROJECTS-->
+
+<!-- Contact section -->
+<section id="Contact" class="contact-section">
+ <div class="contact-header"> 
+   <h2>
+    Lets work together !
+  </h2>
+  </div>
+  <div id="contact-links">
+
+  <a href="tel:+917003569494" class="fa fa-phone" ></a>
+  <!-- <a href="#" class="fa fa-facebook"></a>-->
+  <!-- <a href="#" class="fa fa-linkedin"></a>-->
+  <!-- <a href="#" class="fa fa-youtube"></a>-->
+   <a href="https://instagram.com/_bronzyyy_?igshid=19bd2b8sk964u" class="fa fa-instagram" target="_blank"></a>
+       </div>
+  
+</section>
+<!-- end contact section -->
+  
+  <!-- footer-->
+  <footer>
+  <p>
+    Created and designed by @mohitjakhotra
+  </p>
+ 
+ 
+</footer>
+</html>
+  <!--end footer-->
