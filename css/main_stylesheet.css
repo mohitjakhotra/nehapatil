@@ -122,7 +122,6 @@ a{
   background-size: 100%;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
 }
-
 .nav_bar a {
   font-family: 'open sans';
   display: block;
@@ -137,7 +136,6 @@ a{
   
  
 }
-
 @media(max-width: 600px){
   .nav_bar{
     flex-direction: column; 
@@ -152,7 +150,6 @@ a{
   background: #c56183;
   }
   
-
 }
 @media screen and (max-width: 600px) {
   .nav_bar a:not(:first-child) {display: none;}
@@ -175,7 +172,6 @@ a{
   .nav_bar .icon {
   display: none;
 }
-
 }
 /*nav-end*/
 
@@ -343,8 +339,9 @@ align-content: center;
     width: 20px;
     padding: auto;
   }
-  }
+}
 
+}
 #thumbn{
   border:3px solid rgba(255,255,255,0.5);
   border-radius: 30px;
@@ -473,7 +470,6 @@ footer{
 /*.fa-facebook {
   background: #3B5998;
   color: white;}
-
 .fa-linkedin {
   background: #007bb5;
   color: white;
@@ -506,4 +502,3 @@ footer{
 .contact-header{
   font-family: 'Chilanka', cursive;
 }
-
