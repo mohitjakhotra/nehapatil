@@ -486,15 +486,15 @@ footer{
     background:linear-gradient(45deg,#c0c0aa,#1cefff);
   color: white;
   }
+  .fa-phone{
+     background: linear-gradient(45deg,#232526,#414345);
+  color: white;
+}
 .fa-qrcode{
   
   background:linear-gradient(45deg,#ECE9E6,#FFFFFF);
   color: black;
 
-}
-  .fa-phone{
-     background: linear-gradient(45deg,#232526,#414345);
-  color: white;
 }
 
   .fa-instagram {
