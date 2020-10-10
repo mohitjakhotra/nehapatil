@@ -343,11 +343,6 @@ align-content: center;
     width: 20px;
     padding: auto;
   }
-}
-  @media(max-width:848px){
-    .gallery img{
-    width: 48px;
-    }
   }
 
 #thumbn{
