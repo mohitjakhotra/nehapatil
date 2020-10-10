@@ -346,7 +346,7 @@ align-content: center;
 }
   @media(max-width: 848px){
   .gallery img{
-    width:48px;
+    width:45px;
   }
   }
 }
